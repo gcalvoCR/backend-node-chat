@@ -1,0 +1,108 @@
+Node
+ejecutar JS fuera del browser
+
+Webpack
+to compile files
+
+Babel
+to transpile new JS into old JS
+
+
+PM2
+to create servers
+
+Electron
+
+
+HTTP
+- a comunication protocol to transfer information on the web
+- common language (ingles, portugues)
+
+Request
+- Metodo (what to do)
+- Body (what the server returns)
+- Version of protocol 
+- Headers
+- Path
+
+Response
+- Version of Protocol
+- Status (how was the operation) code and message
+- Header
+
+
+***************  Methods  ***************
+- GET
+  - To request information
+- POST
+  - To add information
+- PUT
+  - To update information
+- PATCH
+  - To update just part of the information
+- DELETE
+  - To delete information
+- OPTIONS
+  - To ask information about the methods
+
+
+
+***************  Headers   ***************
+- context information about the request
+  - Authentication
+  - cache
+  - conditions
+  - cors
+  - cookies (save them)
+  - specific commands (only with specific conditions)
+
+COOKIES
+- To share information between requests
+
+CORS
+- share information from a different origin
+
+ACCEPT
+- Type of content
+- Accept
+- Accept-Charset
+- Accept-Encoding
+
+CACHE
+- For temporary storage
+- Cache-control
+- Expires
+
+
+***************  Status ***************
+200 OK
+201 CREATED
+
+300s redirected
+301 moved permanently
+304 not modified
+
+400s Client Errors
+400 Bad request
+401 Unauthorized
+403 Forbidden
+404 not found
+
+500s Server Errors
+
+***************  Body  ***************
+Information that we are sending or receiving
+
+The header defines the type of body:
+- Content-Type
+- Content-Length
+
+***************  Query params ***************
+Se usan para especificar mejor la peticion
+para compatir information con el frontend
+?orderBy=name&age=25
+- key=value
+- split by &
+
+
+
