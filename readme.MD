@@ -11,7 +11,7 @@ In order to run the project you need to add the:
 - host,
 - database
 
-to the config.js file inside the project!
+to the `config.js` file inside the project!
 
 ## Dependencies
 
@@ -31,7 +31,7 @@ to the config.js file inside the project!
 
 ## Notes
 
-- for Express 4.16.0 and higher: body parser has been re-added to provide request body parsing support out-of-the-box.
+- For Express 4.16.0 and higher: body parser has been re-added to provide request body parsing support out-of-the-box.
 
 # Architecture explanation
 
