@@ -1,4 +1,4 @@
-const Model = require("./model");
+const Model = require("./chatModel");
 
 function addChat(chat) {
   const myChat = new Model(chat);

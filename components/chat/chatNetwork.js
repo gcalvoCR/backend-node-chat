@@ -1,6 +1,6 @@
 const express = require("express");
 const response = require("../../network/response");
-const controller = require("./controller");
+const controller = require("./chatController");
 const router = express.Router();
 
 router.get("/:userId", (req, res) => {

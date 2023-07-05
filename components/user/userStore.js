@@ -1,4 +1,4 @@
-const Model = require("./model");
+const Model = require("./userModel");
 
 function addUser(user) {
   const myUser = new Model(user);
@@ -14,7 +14,18 @@ async function getUsers(filterUser) {
   return user;
 }
 
+async function getUserByEmail(filterEmail) {
+  let filter = {};
+  if (filterEmail !== null) {
+    console.log('email', filterEmail)
+    filter = { email: filterEmail };
+  }
+  const user = await Model.findOne(filter);
+  return user;
+}
+
 module.exports = {
   add: addUser,
   list: getUsers,
+  getByEmail: getUserByEmail,
 };

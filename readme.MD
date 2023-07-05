@@ -85,3 +85,12 @@ El protocolo HTTP construye una petición con una dirección (route), un verbo (
 Por esto, cada uno de los componentes, tendrá un archivo “network.js” encargado de traducir la petición del cliente HTTP a la acción que queremos realizar en el controlador.
 
 Así, lo que hace el código (la funcionalidad) no está acoplado a unos requisitos de red, y puede ser reutilizado con otras fuentes de entrada (colas MQTT, una biblioteca externa, microservicios…).
+
+
+# Steps
+
+1. Define first the model
+2. Define the store
+3. Define the controller
+4. Finally define network
+5. Add the component to the routes

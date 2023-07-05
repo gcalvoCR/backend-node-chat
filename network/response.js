@@ -23,6 +23,6 @@ exports.error = function (req, res, message, status, details) {
 
   res.status(statusCode).send({
     error: statusMessage,
-    body: "",
+    body: details,
   });
 };

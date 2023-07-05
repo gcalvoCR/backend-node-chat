@@ -1,7 +1,7 @@
 const express = require("express");
 const multer = require("multer");
 const response = require("../../network/response");
-const controller = require("./controller");
+const controller = require("./messageController");
 const router = express.Router();
 const config = require("../../config");
 

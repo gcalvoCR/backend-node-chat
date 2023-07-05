@@ -1,4 +1,4 @@
-const store = require("./store");
+const store = require("./chatStore");
 
 function addChat(users) {
   if (!users || !Array.isArray(users)) {

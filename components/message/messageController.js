@@ -1,4 +1,4 @@
-const store = require("./store");
+const store = require("./messageStore");
 const { socket } = require("../../socket");
 const config = require("../../config");
 
