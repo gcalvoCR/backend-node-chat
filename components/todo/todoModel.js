@@ -6,7 +6,7 @@ const Schema = mongoose.Schema;
 const mySchema = new Schema({
   title: String,
   description: String,
-  comments: String
+  reminder: Boolean
 });
 
 const model = mongoose.model("Todo", mySchema);

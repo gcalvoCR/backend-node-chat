@@ -4,6 +4,10 @@ function getTodos(filterTodo) {
   return store.list(filterTodo);
 }
 
+function getTodoById(id) {
+  return store.findById(id);
+}
+
 function addTodo(todo) {
   return store.add(todo);
 }
@@ -29,6 +33,7 @@ async function updateTodo(id, filterTodo) {
 
 module.exports = {
   getTodos,
+  getTodoById,
   addTodo,
   getTodoByTitle,
   deleteTodo,

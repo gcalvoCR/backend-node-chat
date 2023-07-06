@@ -17,6 +17,18 @@ router.get("/", function (req, res) {
     });
 });
 
+router.get("/:id", function (req, res) {
+  controller
+    .getTodoById(req.params.id)
+    .then((todo) => {
+      console.log(todo)
+      response.success(req, res, todo, 200);
+    })
+    .catch((error) => {
+      response.error(req, res, "Unexpected error", 500, error);
+    });
+});
+
 router.post("/", function (req, res) {
   controller
     .addTodo(req.body)
